@@ -1,0 +1,40 @@
+body {
+  /* background-image: linear-gradient(to right, red , yellow);
+     */
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+}
+.col-md-6 {
+  margin-top: 150px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: 2px solid black;
+  outline: 0;
+  padding: 0.5rem;
+}
+button {
+  width: 100%;
+  font-weight: bold !important;
+  font-size: large !important;
+}
+input {
+  width: 100%;
+  border: 2px solid blue;
+  outline: 0;
+  font-weight: bold;
+  font-size: large;
+}
