@@ -16,18 +16,20 @@
     <!-- Css files -->
     <link rel="stylesheet" href="../css/style.css" />
 
-    <title>Hello, world!</title>
+    <title>Project 2: Calci JS</title>
   </head>
   <body>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-6 text-center p-3">
+        <div
+          class="col-md-6 text-center p-3 shadow-lg p-3 mb-5 bg-body rounded"
+        >
           <h1>Calci JS</h1>
           <table class="table">
             <tr>
-              <td colspan="3"><input type="text" /></td>
+              <td colspan="3"><input type="text" id="textarea" /></td>
               <td>
-                <button class="btn btn-danger" onClick="clear()">C</button>
+                <button class="btn btn-danger" onClick="clr()">C</button>
               </td>
             </tr>
             <tr>
@@ -47,7 +49,7 @@
                 </button>
               </td>
               <td>
-                <button class="btn btn-primary" onClick="display('/')">
+                <button class="btn btn-warning" onClick="display('/')">
                   /
                 </button>
               </td>
@@ -69,7 +71,7 @@
                 </button>
               </td>
               <td>
-                <button class="btn btn-primary" onClick="display('+')">
+                <button class="btn btn-warning" onClick="display('+')">
                   +
                 </button>
               </td>
@@ -91,16 +93,14 @@
                 </button>
               </td>
               <td>
-                <button class="btn btn-primary" onClick="display('-')">
+                <button class="btn btn-warning" onClick="display('-')">
                   -
                 </button>
               </td>
             </tr>
             <tr>
               <td>
-                <button class="btn btn-primary" onClick="display('.')">
-                  .
-                </button>
+                <button class="btn btn-info" onClick="display('.')">.</button>
               </td>
               <td>
                 <button class="btn btn-primary" onClick="display('0')">
@@ -111,7 +111,7 @@
                 <button class="btn btn-success" onClick="calc()">=</button>
               </td>
               <td>
-                <button class="btn btn-primary" onClick="display('*')">
+                <button class="btn btn-warning" onClick="display('*')">
                   *
                 </button>
               </td>

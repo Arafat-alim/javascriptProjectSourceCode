@@ -22,9 +22,9 @@ h1 {
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
   );
-  border: 2px solid black;
+
   outline: 0;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
 }
 button {
   width: 100%;
