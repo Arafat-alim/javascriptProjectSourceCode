@@ -1,0 +1,19 @@
+body {
+  /* background: rgb(107, 5, 77);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 5, 77, 1) 5%,
+    rgba(121, 9, 15, 1) 35%,
+    rgba(156, 86, 70, 1) 100%
+  ); */
+
+  background: url(../img/Pattern-Randomized.svg);
+}
+h1 {
+  color: white;
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+  background-color: black;
+  padding: 10px !important;
+  border-radius: 10px;
+}
