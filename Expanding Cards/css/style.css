@@ -1,0 +1,70 @@
+/* BoilerPlate  */
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  /* Background Gradient  */
+  background: rgb(107, 5, 77);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 5, 77, 1) 5%,
+    rgba(121, 9, 15, 1) 35%,
+    rgba(156, 86, 70, 1) 100%
+  );
+
+  /* ___________________ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.1;
+  margin: 2px;
+  position: relative; /* for H3  */
+  transition: flex 0.7s ease-in;
+}
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
