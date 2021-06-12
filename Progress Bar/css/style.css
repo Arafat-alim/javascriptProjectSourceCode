@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --line-border-empty: #e0e0e0;
+  --line-border-fill: #3498db;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  background-color: #f6f7fb;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0ex;
+  overflow: hidden;
+  font-weight: 600;
+}
+.container {
+  text-align: center;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  max-width: 100%;
+  position: relative;
+  width: 350px;
+}
+/* empty line for defauly */
+.progress-container::before {
+  background-color: var(--line-border-empty);
+  content: " ";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: -1;
+}
+
+/* blue line for progress */
+.progress {
+  background-color: var(--line-border-fill);
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s ease;
+  width: 0%;
+  z-index: -1;
+}
+
+/* add number to my circle */
+.circle {
+  background-color: #fff;
+  color: #999;
+  border: 3px solid var(--line-border-empty);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+}
+/* Button */
+.btn {
+  background-color: var(--line-border-fill);
+  padding: 5px 10px;
+  border: 0;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+btn.active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}
