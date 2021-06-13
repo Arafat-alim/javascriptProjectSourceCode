@@ -1,0 +1,27 @@
+body {
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  margin: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+h1 {
+  font-size: 50px;
+  color: #ffffff;
+  padding: 10px;
+  background-color: black;
+  margin: 0;
+}
+#box {
+  margin: 50px;
+  height: 350px;
+  width: 350px;
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+
+  transition: transform 2s;
+}
