@@ -1,0 +1,46 @@
+body {
+  background-color: #202020;
+  color: #ffffff;
+}
+button {
+  background-color: #202020;
+  border: 1px solid #ffffff;
+  outline: 0;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  top: 50%;
+  font-size: 50px;
+  color: yellow;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#display {
+  /* text-align: center; */
+  font-size: 100px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+.btn:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
