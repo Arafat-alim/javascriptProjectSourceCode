@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Adding root scope */
+:root {
+    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --left-btn-hover-color: rgba(87, 84, 236, 1);
+    --right-btn-hover-color: rgba(28, 122, 28, 1);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* adding font color and make it center */
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+    white-space: nowrap;
+
+}
+
+/* btn to placed now  */
+.btn {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 50%;
+    text-decoration: none;
+    border: 0.2rem solid #fff;
+    padding: 1.3rem;
+    width: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+/* adding hover effect to my button left */
+.split.left .btn:hover {
+    background-color: var(--left-btn-hover-color);
+    border-color: var(--left-btn-hover-color);
+}
+
+/* adding hover effect to my button right */
+.split.right .btn:hover {
+    background-color: var(--right-btn-hover-color);
+    border-color: var(--right-btn-hover-color);
+}
+
+/*! container must be full size but position must be relative */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+/*! here we doing a split*/
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*! adding material to left side*/
+.split.left {
+    left: 0;
+    background: url(../images/ps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*! adding overlay to left*/
+.split.left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+}
+
+/*! adding material to RIGHT side*/
+.split.right {
+    right: 0;
+    background: url(../images/xbox.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*! adding overlay to right*/
+.split.right::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--right-bg-color);
+}
+
+/* my hovering Effect  left Part*/
+.hover-left .left {
+    width: var(--hover-width);
+}
+
+.hover-left .right {
+    width: var(--other-width);
+}
+
+/* my hovering Effect  right Part*/
+.hover-right .right {
+    width: var(--hover-width);
+}
+
+.hover-right .left {
+    width: var(--other-width);
+}
+
+/* adding transition effect for smooth animation */
+.split.right,
+.split.left,
+.split.left::before,
+.split.right::before {
+    transition: all var(--speed) ease-in-out;
+}
+
+/* for mobile responsive  */
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+        top: 30%;
+    }
+
+    .btn {
+        padding: 1rem;
+        width: 12rem;
+    }
+}
