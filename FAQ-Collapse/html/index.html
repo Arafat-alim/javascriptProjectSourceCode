@@ -16,39 +16,105 @@
     <!-- =========== -->
   </head>
   <body>
-    <h1>Frequently Asked Questions</h1>
+    <h1 class="heading">Frequently Asked Questions</h1>
     <div class="faq-container">
-      <div class="faq active">
-        <h3 class="faq-title">Why shouldnt Trust in Atoms?</h3>
+      <div class="faq">
+        <h3 class="faq-title">What Are APIs?</h3>
 
-        <p class="faq-text">They make up Everything</p>
+        <p class="faq-text">
+          Put simply, APIs allow two or more systems to share data with each
+          other, giving you new ways to consume and interact with your shipments
+          and supply chain. APIs allow users to search for specific types of
+          data, take action, or be notified of changes in status. Due to the
+          real-time nature of APIs and the ability to centralize data from
+          multiple systems, users of APIs can make decisions with the latest
+          data, reducing delay and guess work. You likely interact with APIs
+          every day; they are used by your car, television, phone, and smart
+          home devices. APIs are used to integrate systems together for improved
+          responsiveness, by exchanging information real-time.
+        </p>
         <button class="faq-toggle">
           <i class="fas fa-chevron-down"></i>
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="faq">
-        <h3 class="faq-title">Why shouldnt Trust in Atoms?</h3>
+        <h3 class="faq-title">When Should I Use a Union Pacific API?</h3>
 
-        <p class="faq-text">They make up Everything</p>
+        <p class="faq-text">
+          TWhen determining where to best use APIs, you should first start by
+          identifying what data would be most useful to have real-time access
+          to, within your system. Today, you may be manually looking up the
+          latest information on a shipment from our website, or check if a
+          service issue (or case) has been updated. Second, you should think
+          about the actions you take to manage your shipments, like such as
+          release, order in, etc. Using an API in these scenarios can get you
+          the data you need, when you need it, and give you the ability to act
+          upon it without having to leave your own system. While Union Pacific
+          will be releasing our first suite of services later this year, we plan
+          on continuing to add new functionality and services through additional
+          releases.
+        </p>
         <button class="faq-toggle">
           <i class="fas fa-chevron-down"></i>
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="faq">
-        <h3 class="faq-title">Why shouldnt Trust in Atoms?</h3>
+        <h3 class="faq-title">
+          What will be included in the latest version of services released?
+        </h3>
 
-        <p class="faq-text">They make up Everything</p>
+        <p class="faq-text">
+          Union Pacific’s API services are structured in data objects, or
+          building blocks. These objects can be used as stand-alone services or
+          combined to create more robust processes. In specification review, our
+          team will work with you and help discuss ways you could use these
+          services in your business. Shipment – The shipment interface give the
+          requestor the ability to search their active shipments by a variety of
+          filters and get latest details on ETA/ETG, Planned UP Events, and
+          Offline Events. Shipment Actions – The shipment actions interface will
+          give the request the ability to order in, release, cancel, and view
+          request history for a customer’s location. Case – The case interface
+          gives the requestor the ability to find the latest details on cases
+          related to their shipment. Equipment – The equipment interface gives
+          the requester the ability to search through and identify equipment
+          based on the equipment specifications. Location – The location
+          interface gives the requestor the ability to receive details about
+          their company facilities on the Union Pacific network. Account – The
+          account interface gives the requester the ability to receive the
+          latest details about their company or companies under their account
+          hierarchy. Waybill - The waybill interface gives the requestor the
+          ability to lookup waybill details for a single waybill or multiple
+          waybills. Intermodal APIs – These API services will focus on the
+          processes in the intermodal space including gate reservation and
+          driver applications (UPGo). General Services – The General Services
+          interface allows the users to track active shipments for ETA and
+          current location information.
+        </p>
         <button class="faq-toggle">
           <i class="fas fa-chevron-down"></i>
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="faq">
-        <h3 class="faq-title">Why shouldnt Trust in Atoms?</h3>
+        <h3 class="faq-title">What Are the Types of APIs?</h3>
 
-        <p class="faq-text">They make up Everything</p>
+        <p class="faq-text">
+          As you look through our documentation you will see two different
+          styles of APIs: resource (/shipment) and RPC (/releaseShipment). These
+          styles are used to simplify the use and interaction with our APIs. The
+          resource style APIs are used primarily for data reading and
+          exploration. This style allows the caller to search through data and
+          understand the relationship between it. The relationship between data
+          should follow a logical business model (e.g., locations have tracks,
+          and tracks have equipment). This helps with discovery and makes it
+          easier to find the data you need. RPC style APIs are best used for
+          taking action. The naming of these APIs mirrors this with a style. An
+          example use case of these two styles used together occurs when a
+          customer searches through rail cars to easily find the cars that they
+          would like to order in to their industry.
+        </p>
         <button class="faq-toggle">
           <i class="fas fa-chevron-down"></i>
           <i class="fas fa-times"></i>

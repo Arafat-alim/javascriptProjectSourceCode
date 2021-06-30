@@ -6,12 +6,31 @@
 
 body {
   font-family: "Muli", sans-serif;
-  background-color: #fff;
+  background: rgb(226, 75, 49);
+  background: linear-gradient(
+    41deg,
+    rgba(226, 75, 49, 1) 0%,
+    rgba(253, 141, 29, 0.9387955011106005) 50%,
+    rgba(237, 57, 158, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+  height: 120vh;
 }
 
 h1 {
   border: 50px 0 30px;
   text-align: center;
+}
+p {
+  font-weight: 500;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  margin: 0;
+  padding: 25px;
 }
 
 .faq-container {
@@ -19,17 +38,32 @@ h1 {
   margin: 0 auto;
 }
 .faq {
-  background-color: transparent;
+  background: rgb(226, 75, 49);
+  background: linear-gradient(
+    41deg,
+    rgba(226, 75, 49, 1) 0%,
+    rgba(196, 52, 4, 0.9387955011106005) 50%,
+    rgba(237, 57, 158, 1) 100%
+  );
+
   border: 1px solid red;
   border-radius: 10px;
   margin: 20px 0;
   padding: 20px;
   position: relative;
   overflow: hidden;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in;
+  color: #fff;
 }
 .faq.active {
-  background-color: tomato;
+  background: rgb(226, 75, 49);
+  background: linear-gradient(
+    41deg,
+    rgba(226, 75, 49, 1) 0%,
+    rgba(253, 85, 29, 0.9387955011106005) 50%,
+    rgba(237, 57, 158, 1) 100%
+  );
+
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,6 +72,7 @@ h1 {
   content: "\f075";
   font-family: "Font Awesome 5 Free";
   color: #2ecc71;
+  color: #fff;
   font-size: 7rem;
   position: absolute;
   opacity: 0.2;
@@ -93,5 +128,5 @@ h1 {
   display: none;
 }
 .faq.active .faq-toggle {
-  background-color: #9fa4a8;
+  background-color: black;
 }
