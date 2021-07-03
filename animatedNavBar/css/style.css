@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+  background-image: linear-gradient(
+    to bottom,
+    aliceblue 0%,
+    aliceblue 50%,
+    dodgerblue 50%,
+    dodgerblue 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
