@@ -53,8 +53,8 @@ h3 {
 }
 
 .cup.cup-small:hover {
-  background-color: red;
-  color: #fff;
+  background-color: lightyellow;
+  color: #000;
 }
 
 .cup.cup-small.full {
@@ -62,9 +62,9 @@ h3 {
   color: #fff;
 }
 
-.cup.cup-small.full:hover {
+.cup.cup-small.full:active {
   color: #fff;
-  background-color: lightgreen;
+  background-color: red;
 }
 
 .cups {
@@ -95,13 +95,15 @@ h3 {
 }
 
 .percentage {
-  background-color: var(--fill-colors);
+  /* background-color: var(--fill-colors); */
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
   font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  height: 100%;
+  /* height: ; */
   transition: 0.3s ease;
 }
 
