@@ -44,6 +44,7 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie {
@@ -73,6 +74,8 @@ main {
 
 .movie-info h3 {
   margin-top: 0;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .movie-info span {
@@ -104,6 +107,7 @@ main {
   border-radius: 5px;
   /* Hide ke liye kaam ata hai  */
   transform: translateY(101%);
+  overflow-y: auto;
   transition: transform 0.3s ease-in;
 }
 
