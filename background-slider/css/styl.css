@@ -14,7 +14,7 @@ body {
   margin: 0;
   overflow: hidden;
 
-  background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"); */
 
   background-position: center center;
   background-size: cover;
@@ -69,6 +69,10 @@ body::before {
 }
 .arrow:hover {
   background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease;
+}
+.arrow:active {
+  border: 1px solid yellow;
 }
 
 .arrow:focus {
