@@ -11,3 +11,34 @@ body {
   margin: 0;
   overflow: hidden;
 }
+
+canvas {
+  border: 2px solid steelblue;
+}
+
+.toolbox {
+  border: 1px solid slateblue;
+  border-radius: 5px;
+  background-color: steelblue;
+  display: flex;
+  width: 505px;
+  padding: 1rem;
+}
+
+.toolbox > * {
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  border: none;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.toolbox > *:last-child {
+  margin-left: auto;
+}
