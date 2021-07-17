@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
