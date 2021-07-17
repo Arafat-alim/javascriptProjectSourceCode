@@ -5,7 +5,15 @@ const timeEl = document.querySelector(".time");
 const dateEl = document.querySelector(".date");
 const toggle = document.querySelector(".toggle");
 
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
 const months = [
   "Jan",
