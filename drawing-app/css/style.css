@@ -9,7 +9,6 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
 }
 
 canvas {
@@ -21,7 +20,7 @@ canvas {
   border-radius: 5px;
   background-color: steelblue;
   display: flex;
-  width: 505px;
+  width: 805px;
   padding: 1rem;
 }
 
