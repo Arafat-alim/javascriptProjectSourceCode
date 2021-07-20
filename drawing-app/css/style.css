@@ -21,6 +21,14 @@ h2 {
   color: yellow;
 }
 
+button {
+  border: 1px solid #fff !important;
+  border-radius: 100% !important;
+  font-size: 30px !important;
+}
+button:active {
+  background-color: rgb(255, 0, 157);
+}
 canvas {
   border: 2px solid steelblue;
   background-color: #fff;
@@ -38,8 +46,7 @@ canvas {
 .toolbox > * {
   background-color: transparent;
   color: #fff;
-  border: 2px solid red;
-  border-radius: 5px;
+  border-radius: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -7,6 +7,7 @@ const increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
 const colorEl = document.getElementById("color");
 const sizeEl = document.getElementById("size");
+const eraser = document.getElementById("eraser");
 
 let size = 10; //default size of my circle
 colorEl.value = "red";
@@ -105,4 +106,7 @@ colorEl.addEventListener("change", (e) => {
   color = e.target.value;
 });
 
-console.log(color);
+//adding an eraser
+eraser.addEventListener("click", () => {
+  alert("This feature is locked");
+});
