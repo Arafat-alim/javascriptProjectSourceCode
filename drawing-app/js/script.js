@@ -1,3 +1,5 @@
+// https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const clearEl = document.getElementById("clear");
@@ -6,9 +8,11 @@ const decreaseBtn = document.getElementById("decrease");
 const colorEl = document.getElementById("color");
 const sizeEl = document.getElementById("size");
 
-let size = 10; //size of my circle
-colorEl.value = "black";
+let size = 10; //default size of my circle
+colorEl.value = "red";
 let color = colorEl.value;
+console.log(colorEl.value);
+// color = "Red";
 let isPressed = false;
 let x;
 let y;
@@ -94,5 +98,11 @@ decreaseBtn.addEventListener("click", () => {
   updateSizeOnScreen();
 });
 
-// !TODO
-colorEl.addEventListener("change", (e) => (color = e.target.value));
+//! Note: Color changing cant be possible in firefox
+// WOrk well on chrome
+
+colorEl.addEventListener("change", (e) => {
+  color = e.target.value;
+});
+
+console.log(color);
