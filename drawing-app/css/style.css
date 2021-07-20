@@ -11,12 +11,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 110vh;
+  height: 100vh;
   margin: 0;
 }
 
 h2 {
-  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 2rem;
   color: yellow;
 }
@@ -29,14 +29,17 @@ canvas {
 .toolbox {
   border: 1px solid slateblue;
   border-radius: 5px;
-  background-color: steelblue;
+  background-color: #5f0a87;
   display: flex;
   width: 805px;
   padding: 1rem;
 }
 
 .toolbox > * {
-  background-color: #fff;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid red;
+  border-radius: 5px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
