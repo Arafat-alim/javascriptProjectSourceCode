@@ -5,11 +5,48 @@
 }
 
 body {
+  color: yellow;
   font-family: "Roboto", sans-serif;
-  background-color: aqua;
+  flex-direction: column;
+  background-color: #000000;
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
   margin: 0;
+  overflow: hidden;
+}
+
+button {
+  background-color: purple;
+  border: 1px solid purple;
+  color: #fff;
+  font-size: 1rem;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  position: relative;
+}
+
+button:focus {
+  outline: none;
+}
+
+button .circle {
+  background-color: #fff;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
 }
