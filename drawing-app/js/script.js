@@ -99,14 +99,12 @@ decreaseBtn.addEventListener("click", () => {
   updateSizeOnScreen();
 });
 
-//! Note: Color changing cant be possible in firefox
-// WOrk well on chrome
-
 colorEl.addEventListener("change", (e) => {
   color = e.target.value;
 });
 
 //adding an eraser
-eraser.addEventListener("click", () => {
-  alert("This feature is locked");
+
+eraser.addEventListener("change", () => {
+  isPressed ? "#fff" : "";
 });
