@@ -1,6 +1,6 @@
 const textEl = document.getElementById("text");
 const speedEl = document.getElementById("speed");
-const text = "Love to Write a Code!";
+const text = "Its Harder to Read Code than to write it ❤️";
 let speed = 300 / speedEl.value;
 let idx = 1;
 
