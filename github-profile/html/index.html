@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css//style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css//style.css" />
     <title>Github Profile Search</title>
-</head>
-<body>
-    <h1>Github Profile Search</h1>
+  </head>
+  <body>
+    <form class="user-form" id="form">
+      <h1>Github Profile Search</h1>
+      <input type="text" id="search" placeholder="Search Here ..." />
+    </form>
+
+    <main id="main">
+      <div class="card">
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="" />
+        </div>
+        <div class="user-info">
+          <h2>Arafat-alim</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+            quam.
+          </p>
+          <ul>
+            <li>300 <strong>Followers</strong></li>
+            <li>100 <strong>Following</strong></li>
+            <li>38 <strong>Repos</strong></li>
+          </ul>
+
+          <div id="repos">
+            <a href="#" class="repos">Repo 1</a>
+            <a href="#" class="repos">Repo 2</a>
+            <a href="#" class="repos">Repo 3</a>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="../js/script.js"></script>
-</body>
+  </body>
 </html>
