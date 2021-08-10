@@ -4,24 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css//style.css" />
-    <title>Github Profile Search</title>
+    <title>Particle JS</title>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <!-- particles.js container -->
     <div id="particles-js">
-      <div class="container">
-        <form class="user-form" id="form">
-          <h1>Github Profile Search</h1>
-          <input type="text" id="search" placeholder="Search Here ..." />
+      <div class="login">
+        <form>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter your Username" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter your Password" />
+          </div>
+          <button type="submit">Submit</button>
         </form>
-        <main id="main"></main>
       </div>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="../js/script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
       /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
@@ -33,6 +36,5 @@
         }
       );
     </script>
-    <script src="particles.js"></script>
   </body>
 </html>

@@ -1,47 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
 
-/* @font-face {
-  font-family: product-sans;
-  src: url(../fonts/Product\ Sans\ Regular.ttf);
-} */
-
-/* fonts */
-/* font-family: "Nunito", sans-serif;
-font-family: "Poppins", sans-serif;
-font-family: "Roboto Mono", monospace; */
-/* _______________________________ */
-
 * {
   box-sizing: border-box;
 }
 body {
-  /* font-family: "Nunito", sans-serif; */
-  /* font-family: "Roboto Mono", monospace; */
-  /* font-family: product-sans; */
   font-family: "Poppins", sans-serif;
   background-color: #2a2a72;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   color: #fff;
 }
 
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+.git-form {
+  position: relative;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
 .user-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* .user-form {
   width: 100%;
   max-width: 700px;
   text-align: center;
-}
+} */
 
 .user-form h1 {
   font-size: 4rem;
+  text-align: center;
+  /* margin-left: 1rem; */
+  margin: 0 1rem;
+  max-width: 700px;
   width: 100%;
 }
 
 .user-form input {
   margin: 1rem;
+  max-width: 700px;
   width: 100%;
   background-color: #12124d;
   color: #fff;
@@ -50,6 +60,7 @@ body {
   border: none;
   border-radius: 10px;
   margin-bottom: 1rem;
+
   font-family: "Roboto Mono", monospace;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(0, 0, 0, 0.1);
@@ -61,11 +72,10 @@ body {
 .user-form input:focus {
   outline: none;
 }
-
 .card {
   background-color: #12124d;
   display: flex;
-  max-width: 750px;
+  max-width: 700px;
   padding: 1rem;
   border-radius: 20px;
   margin: 0 1.5rem;
@@ -127,29 +137,19 @@ body {
     /* max-width: 400px; */
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
   .user-form {
-    max-width: 400px;
+    margin-top: 4rem;
+    width: auto;
+    /* max-width: auto; */
+    justify-content: center;
+  }
+  .user-form input {
+    max-width: 440px;
   }
   .user-form h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin: 1rem;
+    font-size: 2.5rem;
+    margin: 0 1rem;
   }
-}
-
-/* particle js */
-
-#particles-js {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -10;
-  top: 0;
-  left: 0;
-}
-
-.container {
-  position: absolute;
-  z-index: 5;
 }
