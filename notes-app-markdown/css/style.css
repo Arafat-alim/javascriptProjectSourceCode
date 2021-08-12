@@ -72,3 +72,10 @@ body {
 .note textarea::placeholder {
   color: green;
 }
+.hidden {
+  display: none;
+}
+
+.main {
+  padding: 10px;
+}
