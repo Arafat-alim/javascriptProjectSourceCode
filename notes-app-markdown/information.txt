@@ -1,1 +1,10 @@
 here we are using CDN named - Marked which allow us to do markdown text editor and behaviour
+
+//concept of local storage
+localStorage.setItem("key", "value"); //set a key
+localStorage.getItem("key"); // get a key
+localStorage.removeItem("key"); // delete a key
+
+//if my value is in array or in object
+localStorage.setItem("key", JSON.stringify(obj / array));
+JSON.parse(localStorage.getItem("key"));
