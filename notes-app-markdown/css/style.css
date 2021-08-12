@@ -41,12 +41,34 @@ body {
 }
 
 .note .tools {
-  background-color: #eee;
-  border-radius: 10px;
+  background-color: #000;
+
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem;
 }
 .note .tools button {
-  background-color: #fff;
+  background-color: transparent;
+  border: none;
+
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+.tools button:hover {
+  background: yellow;
+  color: black;
+}
+.note textarea {
+  border: none;
+  outline: none;
+  height: 400px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+.note textarea::placeholder {
+  color: green;
 }
