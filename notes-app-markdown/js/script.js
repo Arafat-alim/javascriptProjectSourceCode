@@ -9,7 +9,7 @@ if (notes) {
   notes.forEach((note) => addNewNote(note));
 }
 
-console.log(notes);
+// console.log(notes);
 
 function addNewNote(text = "") {
   const note = document.createElement("div");
@@ -27,9 +27,9 @@ function addNewNote(text = "") {
         </button>
       </div>
       <div class="main ${text ? "" : "hidden"}"></div>
-      <textarea placeholder="Enter Your Text" ${
+      <textarea placeholder="Enter Your Text" class="${
         text ? "hidden" : ""
-      }></textarea>
+      }"></textarea>
   `;
 
   const editBtn = note.querySelector(".edit");
@@ -48,6 +48,7 @@ function addNewNote(text = "") {
 
   editBtn.addEventListener("click", () => {
     main.classList.add("hidden");
+
     textArea.classList.remove("hidden");
   });
 
