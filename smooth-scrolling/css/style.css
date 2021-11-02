@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* parent */
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* child */
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* scrolling */
+  scroll-snap-align: start;
+}
+
+.one {
+  background-color: salmon;
+}
+.two {
+  background-color: lightblue;
+  /* height: 50vh; */
+}
+.three {
+  background-color: lightgreen;
+  /* height: 200vh; */
+}
+.four {
+  background-color: lightseagreen;
+}
